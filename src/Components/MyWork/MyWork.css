@@ -1,0 +1,44 @@
+.mywork {
+
+  margin: 200px 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+
+}
+
+.mywork-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+
+}
+.mywork-container img{
+  box-sizing:border-box ;
+  width:400px;
+  height: 250px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  top: 1px;
+}
+.mywork-container img:hover{
+transform: scale(1.10);
+box-shadow:1px 2px 15px #8c52ffa0;
+transition: 0.3s;
+}
+@media (max-width:768px) {
+  .mywork{
+    margin:100px
+  }
+  .mywork-container{
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+  .mywork-container img{
+    width:450px;
+    height: 300px;
+  }
+}

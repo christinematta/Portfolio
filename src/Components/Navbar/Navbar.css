@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #161513;
+  z-index: 1;
+}
+.opacity {
+  opacity: 0.3;
+  transition: "opacity 0.3s ease-in-out";
+}
+.no-opacity{
+  opacity: 1;
+}
+.navbar:hover {
+  opacity: 1;
+  transition: "opacity 0.3s ease-in-out";
+}
+.navbar img {
+  width: max(13vw, 180px);
+  height: max(7vw, 100px);
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar .nav-menu p:hover {
+  opacity: 1;
+  transition: "opacity 0.3s ease-in-out";
+}
+.nav-connect {
+  font-size: 18px;
+  padding: 20px 25px;
+  background: var(--gradient-bg);
+  border-radius: 30px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.391);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.nav-connect:hover {
+  box-shadow: 2px 1px 10px rgba(242, 175, 123, 0.57);
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+.nav-menu li {
+  display: flex;
+  gap: 2px;
+  position: relative;
+}
+
+.nav-menu img {
+  display: flex;
+  position: absolute;
+  width: 52px;
+  height: 56px;
+  top: 4px;
+  right: -15px;
+  z-index: -1;
+}
+.anchor-link {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 3px #8c52ff7a;
+}
+.social-media-navbar {
+  display: flex;
+  gap: 5px;
+}
+.social-icon-navbar {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.nav-menu-close,.nav-burger-menu {
+  display: none;
+}
+
+@media (max-width:768px) {
+  .navbar{
+    margin: 20px 50px;
+  }
+  .social-icon-navbar{
+    display: none;
+  }
+
+  .nav-burger-menu{
+    display: block;
+    position: relative;
+    left: 250px;
+    font-size: 40px;
+  }
+  .nav-menu{
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 50px;
+    top: 0;
+    gap: 30px;
+    background-color: #8c52ff;
+    /* width: 350px; */
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -360px;
+    border-radius: 4px;
+  }
+  .nav-menu-close{
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    top: 9px;
+    right: 13px;
+  }
+
+  .nav-menu li{
+    background-color: #8c52ff;
+    font-size: 25px;
+    opacity: 1 !important;
+    padding-left: 41px;
+    flex-direction: row;
+    gap: 20px;
+
+  }
+  .nav-menu p{
+    text-shadow: 1px 2px 3px rgba(11, 11, 11, 0.64);
+  }
+
+}

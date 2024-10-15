@@ -1,0 +1,57 @@
+.submit-popup {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  display: grid;
+}
+.submit-popup-container {
+  position: relative;
+  place-self: center;
+  width: max(23vw, 330px);
+  color: white;
+  background-color: #5f30bd;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  animation: fadeIn 0.5s;
+  /* box-shadow: 1px 2px 10px rgba(109, 36, 136, 0.639); */
+}
+.submit-popup-icon {
+  position: absolute;
+  font-size: 80px;
+  top: -50px;
+  margin-left: 150px;
+  color: white;
+  background-color: #5f30bd;
+  border-radius: 50%;
+}
+.submit-popup-message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.submit-popup-message h3 {
+  font-size: 30px;
+}
+.submit-popup-message p {
+  font-size: 20px;
+}
+.submit-popup-message button {
+  width: 40%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.submit-popup-message button:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+}

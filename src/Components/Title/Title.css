@@ -1,0 +1,47 @@
+.title {
+  position: relative;
+}
+.title h1 {
+  padding: 0px 30px;
+  font-size: 70px;
+  font-weight: 600;
+  text-shadow: 2px 2px 5px #8c52ff;
+}
+.title-img {
+  position: absolute;
+  top: -20px;
+  z-index: -1;
+}
+.title-about {
+  left: 200px;
+}
+.title-technologies{
+  left:310px;
+}
+.title-work{
+  left:180px;
+}
+.title-contact{
+  left:135px;
+}
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 50px;
+  }
+  .title-img {
+    width: 150px;
+    top: -5px;
+  }
+  .title-about {
+    left: 180px;
+  }
+  .title-technologies{
+    left:253px
+  }
+  .title-work{
+    left:150px;
+  }
+  .title-contact{
+    left:130px;
+  }
+}

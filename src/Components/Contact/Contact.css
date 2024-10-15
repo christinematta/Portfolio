@@ -1,0 +1,148 @@
+.contact {
+  margin: 200px 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.contact-section {
+  width: 100%;
+  display: flex;
+  gap: 150px;
+}
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-left h1 {
+  font-size: 80px;
+  font-weight: 700;
+  background: var(--gradient-bg-txt);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+  max-width: 550px;
+  color: #d8d8d8;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 3px;
+  text-shadow: 1px 1px 3px #8c52ffb0;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #d8d8d8;
+  font-size: 22px;
+}
+.contact-detail {
+  display: flex;
+}
+.social-media {
+  display: flex;
+  gap: 30px;
+  margin-left: 10px;
+}
+.social-icon {
+
+  font-size: 45px;
+  cursor: pointer;
+  color: #8c52ffaa;
+  transition: 0.2s;
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-right label {
+  color: #d8d8d8;
+  font-size: 22px;
+  font-weight: 500;
+}
+.form-data {
+  display: flex;
+  flex-direction: column;
+}
+.form-data input {
+  border: none;
+  width: 40vw;
+  height: 70px;
+  padding-left: 20px;
+  border-radius: 4px;
+  background: #323232;
+  color: #a0a0a0;
+  font-size: 20px;
+}
+.form-data textarea {
+  border: none;
+  width: 40vw;
+  padding-left: 25px;
+  padding-top: 30px;
+  border-radius: 4px;
+  background: #323232;
+  color: #a0a0a0;
+  font-size: 20px;
+}
+.contact-submit {
+  border: none;
+  color: white;
+  border-radius: 50px;
+  background: var(--gradient-bg);
+  font-size: 22px;
+  font-family: "Varela Round";
+  width: 200px;
+  height: 50px;
+  margin-bottom: 50px;
+  margin-left: 21px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-submit:hover{
+  box-shadow: 2px 1px 10px rgba(242, 175, 123, 0.57);
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+
+.copyright{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  text-align: center;
+  color: #979292;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.copyright hr{
+  outline: none;
+  border: 1px solid #979292;
+  border-radius: 4px;
+}
+@media (max-width:768px) {
+  .contact{
+    margin-top: 100px;
+  }
+  .contact-section{
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+  }
+  .contact-left p{
+    line-height: 40px;
+  }
+  .form-data input{
+    width: 73vw;
+  }
+  .form-data textarea{
+    width: 73vw;
+  }
+}
