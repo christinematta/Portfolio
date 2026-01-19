@@ -7,17 +7,24 @@ const mywork_data = [
     {
         w_no:1,
         w_name:"Web design",
-        w_img:project_1
+        w_img:project_1,
+        githubUrl:"https://github.com/christinematta/Mode_ecommerce_website",
+        liveUrl:"https://mode.christine-onsi.workers.dev/"
+
     },
     {
         w_no:2,
         w_name:"Web design",
-        w_img:project_2
+        w_img:project_2,
+        githubUrl:"https://github.com/christinematta/Eatsy/tree/main/frontend",
+        liveUrl:"https://eatsy.christine-onsi.workers.dev/"
     },
     {
         w_no:3,
         w_name:"Web design",
-        w_img:project_3
+        w_img:project_3,
+        githubUrl:"https://github.com/christinematta/Homez",
+        liveUrl:"https://homez-real-estate.pages.dev/"
     },
 
 ]
