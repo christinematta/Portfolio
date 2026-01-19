@@ -13,11 +13,27 @@ const Hero = () => {
         <span>I`m Christine Matta,</span>frontend developer based in
         Netherlands.
       </h1>
-      <p> I`m a frontend developer with a passion for crafting accessible, engaging websites that are built with creativity and precision.</p>
+      <p>
+        {" "}
+        I`m a frontend developer with a passion for crafting accessible,
+        engaging websites that are built with creativity and precision.
+      </p>
       <div className="hero-action">
-        <AnchorLink href='#contact' offset={200}> <div className="hero-connect">Connect with Me</div></AnchorLink>
+        <AnchorLink href="#contact" offset={200}>
+          {" "}
+          <div className="hero-connect">Connect with Me</div>
+        </AnchorLink>
 
-        <div className="hero-resume"><div className="hero-resume-btn">Resume</div></div>
+        <div className="hero-resume">
+          <a
+            href="/Christine-Matta-Frontend.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hero-resume-btn"
+          >
+            Resume
+          </a>
+        </div>
       </div>
     </div>
   );

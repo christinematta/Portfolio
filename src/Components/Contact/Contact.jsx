@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 
-const Contact = ({ setShowSubPopup }) => {
+const Contact = ( setShowSubPopup ) => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (event) => {
